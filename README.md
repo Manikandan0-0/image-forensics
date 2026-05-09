@@ -54,3 +54,34 @@ The list of target classes currently supported are those present in the [ImageNe
 # Example to make the pre-trained ResNet-18 image classification model misclassify a panda as a gibbon
 python src/add_adversarial_noise.py --image images/panda.jpeg --target-class "gibbon"
 ```
+
+## 🌐 Web Application
+
+This project also includes a full-stack web application for interactive exploration.
+
+### Running the Backend (FastAPI)
+
+From the root directory:
+```shell
+# Install backend dependencies
+pip install -r requirements.txt
+
+# Start the FastAPI server on port 8000
+python -m uvicorn main:app --reload
+```
+
+### Running the Frontend (React + Tailwind)
+
+In a new terminal, from the root directory:
+```shell
+# Move to the frontend folder
+cd frontend
+
+# Install Node dependencies
+npm install
+
+# Start the Vite development server on port 5173
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to access the web app.

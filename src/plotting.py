@@ -53,4 +53,5 @@ def plot_images(orig_img: torch.Tensor, adv_img_results: Result):
         transform=axes[0].transAxes,
     )
 
-    plt.show()
+    plt.savefig("adversarial_output.png")
+    print("Plot saved to adversarial_output.png")

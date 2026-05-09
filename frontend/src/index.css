@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #f8fafc; /* bg-gray-50 */
+    color: #111827;            /* text-gray-900 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

@@ -101,7 +101,10 @@ torchvision==0.17.2
     # via adversarial-attack (pyproject.toml)
 tqdm==4.66.2
     # via adversarial-attack (pyproject.toml)
-typing-extensions==4.11.0
+typing_extensions==4.12.2
+fastapi==0.115.0
+uvicorn==0.30.6
+python-multipart==0.0.90
     # via torch
 virtualenv==20.25.1
     # via pre-commit
@@ -115,3 +118,6 @@ zipp==3.18.1
 # The following packages are considered to be unsafe in a requirements file:
 # pip
 # setuptools
+
+kornia>=0.7.3
+scikit-image>=0.21.0
